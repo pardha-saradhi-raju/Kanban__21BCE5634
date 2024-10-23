@@ -1,0 +1,42 @@
+.usericon-container {
+    display: grid;
+    place-items: center;
+    font-size: 0.55rem;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: #00a2ff;
+    color: #fff;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.usericon-container:hover {
+    background-color: #175d9a;
+    transform: scale(1.05);
+}
+
+.usericon-container .user-status {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #fff;
+    background-color: #dfe1e4;
+    height: 0.35rem;
+    width: 0.35rem;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.usericon-container .user-status.available {
+    background-color: #ffc107;
+}
+
+.usericon-container .user-status.busy {
+    background-color: #dc3545;
+}
+
+.usericon-container .user-status.offline {
+    background-color: #6c757d;
+}
